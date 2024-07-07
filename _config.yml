@@ -1,13 +1,13 @@
-title: "My Blogs Name"
-author: "Default Author Name"
-description: "Some short description of your blog can go here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+title: "Intelligent Systems Toolbox: Data Engineering, Automation, Machine Learning, and Programming"
+author: "Prabin Raj Shrestha"
+description: "This blog explores the essential tools and techniques for technologists, covering everything from Python programming and data pipelines to big data engineering, process automation, best practices, and advanced machine learning applications. Learn how to build intelligent systems through effective data engineering, process automation, and machine learning. This blog covers the creation of data pipelines, big data management, solving coding challenges, and deploying machine learning models for real-world applications." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
-email: "example@mail.com"
-twitter_username: "twitteruser"
-github_username: "githubuser"
-linkedin_username: "linkedinuser"
+email: "prabin.r.shrestha@gmail.com"
+# twitter_username: "twitteruser"
+github_username: "Prbn"
+linkedin_username: "prbnrs"
 #facebook_username: username
 #flickr_username: username
 #instagram_username: username
