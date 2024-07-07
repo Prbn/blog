@@ -2,7 +2,7 @@ Welcome to “Intelligent Systems Toolbox,” your ultimate resource for masteri
 
 Dive into comprehensive tutorials, insightful articles, and practical guides that cover a wide array of topics, including:
 
-  •	Python Programming: Learn how to harness the power of Python for data analysis, automation, and machine learning. From basic syntax to advanced libraries like Pandas, NumPy, and TensorFlow, we cover everything you need to become proficient in Python.
+	•	Python Programming: Learn how to harness the power of Python for data analysis, automation, and machine learning. From basic syntax to advanced libraries like Pandas, NumPy, and TensorFlow, we cover everything you need to become proficient in Python.
 	•	Data Pipelines: Discover the best practices for designing and implementing efficient data pipelines. Understand how to streamline data ingestion, processing, and storage to ensure a smooth data flow within your organization.
 	•	Big Data Engineering: Explore the world of big data with in-depth discussions on tools and frameworks like Apache Spark, Hadoop, and more. Learn how to handle massive datasets, perform distributed computing, and extract meaningful insights from big data.
 	•	Process Automation: Uncover the secrets to automating repetitive tasks and workflows. From data cleaning and preprocessing to deploying machine learning models, find out how automation can save time and increase productivity.
