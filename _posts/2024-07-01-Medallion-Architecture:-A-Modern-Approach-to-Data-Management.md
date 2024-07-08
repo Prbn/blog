@@ -19,7 +19,7 @@ Before delving into the specifics of Medallion Architecture, it's essential to u
 
 Medallion Architecture employs a multi-tiered approach to data management consisting of bronze, silver, and gold layers. Each layer plays a crucial role in the data transformation process, ensuring data quality and readiness for analysis:
 
-![Image](https://github.com/Prbn/prbn.github.io/blob/main/_resource/Medallion%20Architecture_IMG1.png)
+![Image](https://github.com/Prbn/prbn.github.io/blob/main/_resource/Medallion%20Architecture_IMG1.png?raw=true)
 
 ### 🥉 Bronze Layer
 
@@ -43,7 +43,7 @@ The Medallion Architecture is inherently flexible and can be tailored to meet th
 Regardless of the names and number of layers, the key is to adapt the Medallion Architecture to fit your organization's requirements, ensuring efficient data management and high data quality.
 
 
-![Image](https://github.com/Prbn/prbn.github.io/blob/main/_resource/Medallion%20Architecture_IMG2.png)
+![Image](https://raw.githubusercontent.com/Prbn/prbn.github.io/main/_resource/Medallion%20Architecture_IMG2.png)
 
 ## Benefits of Medallion Architecture
 
