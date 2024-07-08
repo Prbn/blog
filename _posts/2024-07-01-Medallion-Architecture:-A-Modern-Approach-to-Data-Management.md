@@ -12,14 +12,14 @@ Medallion Architecture, proposed by Databricks, enhances data management within 
 
 Before delving into the specifics of Medallion Architecture, it's essential to understand the related concepts of Data Lakehouse and Data Mesh:
 
-![Image](https://github.com/Prbn/prbn.github.io/blob/main/_resource/Medallion%20Architecture_IMG1.png)
-
 - **Data Mesh**: This approach decentralizes data ownership by treating data as products and assigning responsibility to specific teams for particular data domains. It promotes collaboration, data quality, and ease of access in complex environments.
 - **Data Lakehouse**: This architecture combines the flexibility of a Data Lake with the analytical capabilities of a Data Warehouse. It allows for storing, processing, and analyzing a variety of data types in one place, facilitating advanced analytics with robust security and governance measures.
 
 ## Structure of Medallion Architecture
 
 Medallion Architecture employs a multi-tiered approach to data management consisting of bronze, silver, and gold layers. Each layer plays a crucial role in the data transformation process, ensuring data quality and readiness for analysis:
+
+![Image](https://github.com/Prbn/prbn.github.io/blob/main/_resource/Medallion%20Architecture_IMG1.png)
 
 ### 🥉 Bronze Layer
 
