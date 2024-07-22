@@ -8,10 +8,10 @@ In the world of data structures, choosing the right one for a specific task can 
 ![*Array - phoenixnap*](https://phoenixnap.com/kb/wp-content/uploads/2022/10/array-data-structure.png)
 
 **Operations**:
-- **Insertion**: $O(1)$ for adding at the end, $O(n)$ for adding at a specific position.
-- **Deletion**: $O(1)$ for removing the last element, $O(n)$ for removing from a specific position.
-- **Search**: $O(n)$ for unsorted arrays.
-- **Access**: $O(1)$ for direct index access.
+- **Insertion**: *O(1)* for adding at the end, *O(n)* for adding at a specific position.
+- **Deletion**: *O(1)* for removing the last element, *O(n)* for removing from a specific position.
+- **Search**: *O(n)* for unsorted arrays.
+- **Access**: *O(1)* for direct index access.
 
 **Pros**:
 - Simple and easy to use.
@@ -27,10 +27,10 @@ In the world of data structures, choosing the right one for a specific task can 
 ![*sorted array- opengenus*](https://iq.opengenus.org/content/images/2020/09/sorted_array-2.png)
 
 **Operations**:
-- **Insertion**: $O(n)$ due to the need to shift elements to maintain order.
-- **Deletion**: $O(n)$ for the same reason.
-- **Search**: $O(\log n)$ using binary search.
-- **Access**: $O(1)$ for direct index access.
+- **Insertion**: *O(n)* due to the need to shift elements to maintain order.
+- **Deletion**: *O(n)* for the same reason.
+- **Search**: *O(log n)* using binary search.
+- **Access**: *O(1)* for direct index access.
 
 **Pros**:
 - Efficient search operations due to ordered elements.
@@ -46,10 +46,10 @@ In the world of data structures, choosing the right one for a specific task can 
 ![*Linked List - programiz*](https://cdn.programiz.com/sites/tutorial2program/files/linked-list-concept.png)
 
 **Operations**:
-- **Insertion**: $O(1)$ if inserting at the head, $O(n)$ if inserting after a given node.
-- **Deletion**: $O(1)$ if deleting the head, $O(n)$ if deleting a node by value.
-- **Search**: $O(n)$.
-- **Access**: $O(n)$ as you need to traverse the list.
+- **Insertion**: *O(1)* if inserting at the head, *O(n)* if inserting after a given node.
+- **Deletion**: *O(1)* if deleting the head, *O(n)* if deleting a node by value.
+- **Search**: *O(n)*.
+- **Access**: *O(n)* as you need to traverse the list.
 
 **Pros**:
 - Dynamic size, no need to define size initially.
@@ -65,10 +65,10 @@ In the world of data structures, choosing the right one for a specific task can 
 ![*Sorted Linked List - GeeksforGeeks*](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210117124935/SortedList.png)
 
 **Operations**:
-- **Insertion**: $O(n)$ as you need to find the correct position.
-- **Deletion**: $O(n)$ for finding and removing a specific node.
-- **Search**: $O(n)$.
-- **Access**: $O(n)$ due to traversal requirements.
+- **Insertion**: *O(n)* as you need to find the correct position.
+- **Deletion**: *O(n)* for finding and removing a specific node.
+- **Search**: *O(n)*.
+- **Access**: *O(n)* due to traversal requirements.
 
 **Pros**:
 - Dynamic size with sorted order.
@@ -84,10 +84,10 @@ In the world of data structures, choosing the right one for a specific task can 
 ![*Binary Heap - GeeksforGeeks*](https://media.geeksforgeeks.org/wp-content/cdn-uploads/binaryheap.png)
 
 **Operations**:
-- **Insertion**: $O(\log n)$ due to heapify operations.
-- **Deletion**: $O(\log n)$ for removing the root and reheapifying.
-- **Search**: $O(n)$ as heaps are not sorted.
-- **Access**: $O(1)$ for accessing the root (min or max element).
+- **Insertion**: *O(log n)* due to heapify operations.
+- **Deletion**: *O(log n)* for removing the root and reheapifying.
+- **Search**: *O(n)* as heaps are not sorted.
+- **Access**: *O(1)* for accessing the root (min or max element).
 
 **Pros**:
 - Efficient for priority queue operations.
@@ -101,14 +101,14 @@ In the world of data structures, choosing the right one for a specific task can 
 
 | Data Structure      | Insertion          | Deletion           | Search             | Access            | Pros                                   | Cons                                         |
 |---------------------|--------------------|--------------------|--------------------|-------------------|----------------------------------------|----------------------------------------------|
-| **Array**           | $O(1)$ (end)     | $O(1)$ (end)     | $O(n)$           | $O(1)$          | Simple, fast access by index           | Fixed size, inefficient middle insertions    |
-|                     | $O(n)$ (middle)  | $O(n)$ (middle)  |                    |                   |                                        | and deletions                                |
-| **Sorted Array**    | $O(n)$           | $O(n)$           | $O(\log n)$      | $O(1)$          | Efficient search, fast access by index | Costly insertions and deletions              |
-| **Linked List**     | $O(1)$ (head)    | $O(1)$ (head)    | $O(n)$           | $O(n)$          | Dynamic size, efficient head operations| Slow access, higher memory usage             |
-|                     | $O(n)$ (middle)  | $O(n)$ (middle)  |                    |                   |                                        |                                              |
-| **Sorted Linked List** | $O(n)$        | $O(n)$           | $O(n)$           | $O(n)$          | Dynamic size, sorted order             | Slow access, higher memory usage,            |
+| **Array**           | *O(1)* (end)     | *O(1)* (end)     | *O(n)*           | *O(1)*          | Simple, fast access by index           | Fixed size, inefficient middle insertions    |
+|                     | *O(n)* (middle)  | *O(n)* (middle)  |                    |                   |                                        | and deletions                                |
+| **Sorted Array**    | *O(n)*           | *O(n)*           | *O(log n)*      | *O(1)*          | Efficient search, fast access by index | Costly insertions and deletions              |
+| **Linked List**     | *O(1)* (head)    | *O(1)* (head)    | *O(n)*           | *O(n)*          | Dynamic size, efficient head operations| Slow access, higher memory usage             |
+|                     | *O(n)* (middle)  | *O(n)* (middle)  |                    |                   |                                        |                                              |
+| **Sorted Linked List** | *O(n)*        | *O(n)*           | *O(n)*           | *O(n)*          | Dynamic size, sorted order             | Slow access, higher memory usage,            |
 |                     |                    |                    |                    |                   |                                        | costly insertions and deletions              |
-| **Heap**            | $O(\log n)$      | $O(\log n)$      | $O(n)$           | $O(1)$ (root)   | Efficient for priority queues           | Inefficient search, not suitable for         |
+| **Heap**            | *O(log n)*      | *O(log n)*      | *O(n)*           | *O(1)* (root)   | Efficient for priority queues           | Inefficient search, not suitable for         |
 |                     |                    |                    |                    |                   |                                        | fast random access                           |
 
 
