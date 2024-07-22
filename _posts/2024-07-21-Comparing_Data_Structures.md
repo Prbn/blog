@@ -5,7 +5,7 @@ In the world of data structures, choosing the right one for a specific task can 
 ## 1. Array
 **Structure**: A collection of elements identified by index.
 
-![Image](https://phoenixnap.com/kb/wp-content/uploads/2022/10/array-data-structure.png)
+![*Array - phoenixnap*](https://phoenixnap.com/kb/wp-content/uploads/2022/10/array-data-structure.png)
 
 **Operations**:
 - **Insertion**: \(O(1)\) for adding at the end, \(O(n)\) for adding at a specific position.
@@ -24,8 +24,7 @@ In the world of data structures, choosing the right one for a specific task can 
 ## 2. Sorted Array
 **Structure**: An array where elements are always kept in a sorted order.
 
-![Image](https://iq.opengenus.org/content/images/2020/09/sorted_array-2.png)
-*sorted array- opengenus*
+![*sorted array- opengenus*](https://iq.opengenus.org/content/images/2020/09/sorted_array-2.png)
 
 **Operations**:
 - **Insertion**: \(O(n)\) due to the need to shift elements to maintain order.
@@ -44,8 +43,7 @@ In the world of data structures, choosing the right one for a specific task can 
 ## 3. Linked List
 **Structure**: A collection of nodes where each node contains data and a reference to the next node.
 
-![Image](https://cdn.programiz.com/sites/tutorial2program/files/linked-list-concept.png)
-*Linked List - programiz*
+![*Linked List - programiz*](https://cdn.programiz.com/sites/tutorial2program/files/linked-list-concept.png)
 
 **Operations**:
 - **Insertion**: \(O(1)\) if inserting at the head, \(O(n)\) if inserting after a given node.
@@ -64,8 +62,7 @@ In the world of data structures, choosing the right one for a specific task can 
 ## 4. Sorted Linked List
 **Structure**: A linked list where elements are always maintained in sorted order.
 
-![Image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210117124935/SortedList.png)
-*Sorted Linked List - GeeksforGeeks*
+![*Sorted Linked List - GeeksforGeeks*](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210117124935/SortedList.png)
 
 **Operations**:
 - **Insertion**: \(O(n)\) as you need to find the correct position.
@@ -84,8 +81,7 @@ In the world of data structures, choosing the right one for a specific task can 
 ## 5. Heap
 **Structure**: A complete binary tree where each node is either greater (max-heap) or smaller (min-heap) than its children.
 
-![Image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/binaryheap.png)
-*Binary Heap - GeeksforGeeks*
+![*Binary Heap - GeeksforGeeks*](https://media.geeksforgeeks.org/wp-content/cdn-uploads/binaryheap.png)
 
 **Operations**:
 - **Insertion**: \(O(\log n)\) due to heapify operations.
