@@ -1,3 +1,5 @@
+# Risk & Reward
+
 # Risk
 
 **Risk** refers to the potential for an adverse outcome or loss, often in relation to uncertainty about the future. In finance and investments, risk typically means the possibility that the actual return on an investment will be lower than the expected return, or even result in a loss. Risk can arise from various factors, including market fluctuations, economic conditions, company-specific events, or broader geopolitical issues.
