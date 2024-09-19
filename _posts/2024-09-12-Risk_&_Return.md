@@ -49,14 +49,14 @@
 ### Types of Return:
 
 1. **Total Return:** This represents the overall gain or loss on an investment, including both income (dividends, interest) and capital gains (or losses). Total return accounts for all sources of profit.
-   - **Formula:**  
-   \[
-   \text{Total Return} = \frac{(\text{Ending Value} - \text{Initial Value}) + \text{Income}}{\text{Initial Value}} \times 100
-   \]
+   - **Formula:**
+$$
+\text{Total Return} = \frac{(\text{Ending Value} - \text{Initial Value}) + \text{Income}}{\text{Initial Value}} \times 100
+$$
    - **Example:** If you invest $1,000 in a stock and after a year it’s worth $1,100, plus you received $50 in dividends, the total return would be:  
-   \[
-   \text{Total Return} = \frac{(1,100 - 1,000) + 50}{1,000} \times 100 = 15\%
-   \]
+$$
+\text{Total Return} = \frac{(1,100 - 1,000) + 50}{1,000} \times 100 = 15\%
+$$
 
 2. **Capital Gains (or Losses):** This refers to the change in the value of an asset or investment. A **capital gain** occurs when the value of the asset increases, while a **capital loss** occurs when the value decreases.
    - **Example:** If you buy a stock for $100 and sell it for $120, you have a capital gain of $20.
@@ -66,9 +66,9 @@
 
 4. **Real Return:** This adjusts the nominal return for inflation, giving a better picture of the true purchasing power of the investment’s growth.
    - **Formula:**  
-   \[
-   \text{Real Return} = \frac{1 + \text{Nominal Return}}{1 + \text{Inflation Rate}} - 1
-   \]
+$$
+\text{Real Return} = \frac{1 + \text{Nominal Return}}{1 + \text{Inflation Rate}} - 1
+$$
    - **Example:** If an investment earned a nominal return of 6% and inflation was 2%, the real return would be approximately 3.92%.
 
 ### Measuring Return:
@@ -77,9 +77,9 @@
   
 - **Annualized Return:** This standardizes the return over a one-year period, allowing for easier comparison between investments with different time horizons.
   - **Formula:**  
-  \[
-  \text{Annualized Return} = \left( \frac{\text{Ending Value}}{\text{Initial Value}} \right)^{\frac{1}{\text{Years}}} - 1
-  \]
+$$
+\text{Annualized Return} = \left( \frac{\text{Ending Value}}{\text{Initial Value}} \right)^{\frac{1}{\text{Years}}} - 1
+$$
   - **Example:** If an investment grows from $1,000 to $1,500 over three years, the annualized return would be approximately 14.47%.
 
 - **Risk-adjusted Return:** This considers both the return and the amount of risk taken to achieve that return. The Sharpe Ratio is one example of a risk-adjusted return measure.
