@@ -1,4 +1,4 @@
-# Risk & Reward
+# Risk And Reward
 
 # Risk
 
