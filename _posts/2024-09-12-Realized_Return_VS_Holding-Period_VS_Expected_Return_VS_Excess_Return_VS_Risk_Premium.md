@@ -1,14 +1,16 @@
 Different types of returns and their comparisons:
 
 ### 1. **Realized Return:**
-   - **Definition:** The actual return an investor earns on an investment over a specific time period. It includes both capital gains (or losses) and income (like dividends or interest) received during that time.
-   - **Formula:**
-     $$
-     \text{Realized Return} = \frac{(P_{\text{end}} - P_{\text{begin}}) + D}{P_{\text{begin}}}
-     $$
-     Where $P_{\text{end}}$ is the price at the end of the period, $P_{\text{begin}}$ is the price at the start, and $D$ is any income earned.
-   - **Use Case:** Evaluating the actual historical performance of an investment.
-   - **Example:** If you bought a stock at $100, sold it at $120, and received $5 in dividends, the realized return is 25%.
+- **Definition:** The actual return an investor earns on an investment over a specific time period. It includes both capital gains (or losses) and income (like dividends or interest) received during that time.
+- **Formula:**
+
+$$
+\text{Realized Return} = \frac{(P_{\text{end}} - P_{\text{begin}}) + D}{P_{\text{begin}}}
+$$
+  Where:
+  - $P_{\text{end}}$ is the price at the end of the period, $P_{\text{begin}}$ is the price at the start, and $D$ is any income earned.
+- **Use Case:** Evaluating the actual historical performance of an investment.
+- **Example:** If you bought a stock at $100, sold it at $120, and received $5 in dividends, the realized return is 25%.
 
 ### 2. **Holding-Period Return (HPR):**
   - **Definition:** HPR measures the total return earned from holding an investment over a specific period of time, which includes price changes and any income received (e.g., dividends).
@@ -119,4 +121,3 @@ Understanding these differences helps investors evaluate past performance (HPR, 
 
 In essence, **Realized Return** and **HPR** reflect past returns, while **Expected Return**, **Excess Return**, and **Risk Premium** provide insights into future expectations and risk-adjusted performance.
 
-These terms are essential in evaluating and comparing the performance of investments and understanding how much risk an investor is taking relative to the reward they receive.
