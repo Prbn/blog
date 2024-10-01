@@ -22,7 +22,7 @@ The **realized return of the complete portfolio** ($R_C$) is a weighted average 
 $$
 \text{Complete Portfolio } (C) = \text{Riskey Assets } (P) + \text{Risk-free assets } (F)
 $$
-\
+
 **Complete Portfolio Return Formula**
 
 The return on the investor’s **complete portfolio** depends on how much is allocated to risky vs. risk-free assets. The return of the portfolio $R_C$ is a weighted average of the returns from the risky asset $R_P$ and the risk-free asset $r_F$. The proportion $y_0$ represents how much of the total wealth is allocated to the risky asset. The formula is:
@@ -42,15 +42,15 @@ Where:
 This formula helps to calculate the **expected return** of the complete portfolio depending on the allocation $y_0$.
 
 ## 4. **Wealth Allocation Between Risk-Free and Risky Assets**
-The wealth allocation between risky and risk-free assets is represented by the variable **$y_0$**, which is the **proportion of wealth** invested in risky assets. The rest of the wealth is allocated to risk-free assets. Here’s how it works:
+The wealth allocation between risky and risk-free assets is represented by the variable **$y_0$**, which is the **proportion of wealth** invested in risky assets. The rest of the wealth is allocated to risk-free assets. Here’s how it works\:
 
 $$
 y_0 = \left\{\begin{array}{}
-0& : R_C = r_F\\
-1& : R_C = R_P\\
-(0,1)& : \text{Long position in portfolio P}\\
-> 1 & : \text{Borrow & long in portfolio P}\\
-< 0 & : \text{Short Postion in portfolio P}\\
+0& : R_C = r_F \\
+1& : R_C = R_P \\
+(0,1)& : \text{Long position in portfolio P} \\
+> 1 & : \text{Borrow & long in portfolio P} \\
+< 0 & : \text{Short Postion in portfolio P} \\
 \end{array}\right\}
 $$
 
@@ -67,37 +67,27 @@ A negative value of $y_0$ indicates **short selling**. This means the investor i
 
 ### Example Scenarios:
 1. **If $y_0 = 0$**:
-   $$
-   R_C = 0 \times R_P + (1 - 0) \times r_F = r_F
-   $$
+   $R_C = 0 \times R_P + (1 - 0) \times r_F = r_F$
    In this case, the portfolio return is equal to the risk-free rate because all the wealth is in risk-free assets.
 
 2. **If $y_0 = 1$**:
-   $$
-   R_C = 1 \times R_P + (1 - 1) \times r_F = R_P
-   $$
+   $R_C = 1 \times R_P + (1 - 1) \times r_F = R_P$
    The entire portfolio return depends on the risky asset because all wealth is invested in risky assets.
 
 3. **If $y_0 = 0.5$** (50% in risky assets and 50% in risk-free assets):
-   $$
-   R_C = 0.5 \times R_P + (1 - 0.5) \times r_F
-   $$
+   $R_C = 0.5 \times R_P + (1 - 0.5) \times r_F$
    In this scenario, the portfolio return will be a blend of both risky and risk-free returns.
 
 ## 5. **Short Selling and Borrowing (Leverage)**
 - **Short Selling, When $y_0 < 0$:** \
-The investor is engaging in **short selling**. This means they are borrowing the risky asset and selling it at time 0, with the expectation of buying it back at a lower price at time 1. Short selling can generate a profit if the asset’s price declines, but it also carries the risk of unlimited losses if the price rises.
-  4. **If $y_0 = -1$** (short selling in risky assets):
-    $$
-    R_C = -1 \times R_P + (1 + 1) \times r_F
-    $$
+The investor is engaging in **short selling**. This means they are borrowing the risky asset and selling it at time 0, with the expectation of buying it back at a lower price at time 1. Short selling can generate a profit if the asset’s price declines, but it also carries the risk of unlimited losses if the price rises. \
+  4. **If $y_0 = -1$** (short selling in risky assets): \
+   $R_C = -1 \times R_P + (1 + 1) \times r_F$
 
 - **Leveraging, When $y_0 > 1$:** \
-The investor is borrowing money to invest more in risky assets than their available capital allows. This is called leveraging, and while it can amplify returns, it also increases the risk of loss if the market moves against the investor.
-  4. **If $y_0 = 1.5$** (borrowing money to invest in risky assets):
-    $$
-    R_C = 1.5 \times R_P + (1 - 1.5) \times r_F
-    $$
+The investor is borrowing money to invest more in risky assets than their available capital allows. This is called leveraging, and while it can amplify returns, it also increases the risk of loss if the market moves against the investor. \
+  5. **If $y_0 = 1.5$** (borrowing money to invest in risky assets): \
+   $R_C = 1.5 \times R_P + (1 - 1.5) \times r_F$
 
 ## 6. **Excess Return of the Complete Portfolio**
 The **excess return** is the return earned beyond the risk-free rate. For the complete portfolio, the excess return is the proportion of wealth invested in the risky asset ($y_0$) times the excess return of the risky asset over the risk-free rate. This can be expressed as:
@@ -190,7 +180,7 @@ Where:
 
 ## Opinion
 
-Investors face the constant trade-off between security and higher returns, with the choice between risk-free and risky assets playing a pivotal role in this decision. The proportion of wealth allocated to risky assets (\( y_0 \)) significantly influences the overall return and volatility of the complete portfolio. As we’ve explored, personal risk tolerance and time horizons dictate whether investors lean towards conservative or aggressive strategies.
+Investors face the constant trade-off between security and higher returns, with the choice between risk-free and risky assets playing a pivotal role in this decision. The proportion of wealth allocated to risky assets ($y_0 $) significantly influences the overall return and volatility of the complete portfolio. As we’ve explored, personal risk tolerance and time horizons dictate whether investors lean towards conservative or aggressive strategies.
 
 The concepts of **short selling** and **leveraging** introduce more complex ways to adjust risk and return. Investors who borrow to increase their exposure to risky assets can amplify returns, but at the cost of greater volatility. Similarly, those who engage in short selling seek to profit from declining asset prices but take on the risk of unlimited losses.
 
@@ -202,8 +192,8 @@ Ultimately, effective portfolio management hinges on understanding the **Capital
 - The allocation of wealth between risky and risk-free assets depends on an investor's **risk tolerance**:
   - **Older investors** typically prefer risk-free assets for stability.
   - **Younger investors** may lean toward risky assets for higher growth potential.
-- The return of a complete portfolio (\(R_C\)) is calculated as a weighted average of the returns from both risky (\(R_P\)) and risk-free (\(r_F\)) assets, based on how much wealth is allocated to each.
-- **Wealth allocation (\(y_0\))** affects the portfolio’s risk and return:
+- The return of a complete portfolio ($R_C$) is calculated as a weighted average of the returns from both risky ($R_P$) and risk-free ($r_F$) assets, based on how much wealth is allocated to each.
+- **Wealth allocation ($y_0$)** affects the portfolio’s risk and return:
   - $y_0 = 0$: All wealth in risk-free assets.
   - $y_0 = 1$: All wealth in risky assets.
   - $y_0 > 1$: Leveraging—borrowing money to invest more in risky assets.
