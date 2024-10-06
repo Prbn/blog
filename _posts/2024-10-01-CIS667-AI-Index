@@ -1,0 +1,81 @@
+# CIS 667 AI
+
+## Term: Fall 2024
+
+## Chapters:
+
+### Chapter 1
+1. Problem solving agents and standard search problems
+2. Un-informed Search Methods
+3. Activity
+
+### Chapter 2
+1. Path Finding (e.g., Romania map)
+2. Problem solving in the Vacuum world with respect to the problem type(s)
+3. Eight puzzle
+4. Uniform Cost Search 
+5. Dijkstra's algorithm
+6. Bidirectional Search
+7. Uninformed vs Informed Search
+
+### Chapter 3
+1. Tree Search
+2. Graph Search
+3. BFS
+4. DFS
+5. BFS, DFS and their implementations
+6. Iterative Deepening Search
+7. Uninformed vs Informed Search
+8. A\* Search
+
+### Chapter 4: Un-informed Search methods
+1. Tree Search
+2. Graph Search
+3. BFS
+4. DFS
+5. BFS, DFS and their implementations
+6. Iterative Deepening Search
+7. Uninformed vs Informed Search
+8. A\* Search
+
+### Chapter 5
+1. Implementation of Search Algorithms
+2. Tree version VS Graph version
+3. Data Structures used in implementation
+4. Some known variations degeneration cases
+5. uniform cost
+6. greedy
+7. weighted
+8. IDA*  (Combined with iterative deepening)
+9. Design and Quality of Heuristic functions (A*)
+10. Relaxation
+11. Combining two heuristics
+12. Pattern Databases
+13. Learning
+14. Heuristics formulations: Weighted A* search
+15. Heuristics formulations: Precomputations and Learning
+16. Combine search strategies: IDA*
+17. Introducing other search strategies
+18. Traveling Salesman Problems
+
+Logical Agents 
+Wumpus World
+A Knowledge-base for Wumpus world
+Representation via Propositional Logic
+KB (Knowledge base)
+phi (property)
+Propositional Logic in general—models and entailment
+Models, Semantic Entailment  KB |= phi
+Review of Propositional
+Equivalence, validity, satisfiability
+Conjunctive Normal Form
+
+
+
+
+## Topics
+1. Problem solving agents and standard search problems
+2. Un-informed Search Methods
+3. Activity
+4. 
+
