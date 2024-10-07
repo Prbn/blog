@@ -1,0 +1,81 @@
+# Intro to AI: Problem solving agents
+
+## What Is AI?
+Historically, researchers have pursued several different versions of AI. 
+Some have defined intelligence in terms of fidelity to human performance, while others prefer an abstract, formal definition of intelligence called rationality—loosely speaking, doing the “right thing.” 
+The subject matter (Rationality) itself also varies: some consider intelligence to be a property of internal thought processes and reasoning, while others focus on intelligent behavior, an external characterization.
+
+- We are not suggesting that humans are “irrational” in the dictionary sense of “deprived of normal mental
+clarity.” We are merely conceding that human decisions are not always mathematically perfect.
+
+
+From these two dimensions:
+— human vs. rational
+- thought vs. behavior
+there are four possible combinations, and there have been adherents and research programs for all four
+
+The methods used are necessarily different: the pursuit of human-like intelligence must be in part an empirical science related to psychology, involving observations and hypotheses about actual human behavior and thought processes; a rationalist approach, on the other hand, involves a combination of mathematics and engineering, and connects to statistics, control theory, and economics.
+
+The various groups have both disparaged and helped each other. Lets look at the four approaches in more detail:
+
+### 1. Acting humanly: The Turing test approach
+
+The Turing test, proposed by Alan Turing (1950), was designed as a thought experiment that would sidestep the philosophical vagueness of the question “Can a machine think?” A computer passes the test if a human interrogator, after posing some written questions, cannot tell whether the written responses come from a person or from a computer
+Programming a computer to pass a rigorously applied test provides plenty to work on. The computer would need the following capabilities:
+- natural language processing to communicate successfully in a human language
+- knowledge representation to store what it knows or hears
+- automated reasoning to answer questions and to draw new conclusions
+- machine learning to adapt to new circumstances and to detect and extrapolate patterns
+
+Turing viewed the physical simulation of a person as unnecessary to demonstrate intelligence. However, other researchers have proposed a total Turing test, which requires interaction with objects and people in the real world. To pass the total Turing test, a robot will need
+- computer vision and speech recognition to perceive the world
+- robotics to manipulate objects and move about
+
+These six disciplines compose most of AI.
+
+### 2. Thinking humanly: The cognitive modeling approach
+To say that a program thinks like a human, we must know how humans think. We can learn
+about human thought in three ways:
+- Introspection—trying to catch our own thoughts as they go by
+- psychological experiments—observing a person in action
+- brain imaging—observing the brain in action
+
+Once we have a sufficiently precise theory of the mind, it becomes possible to express the theory as a computer program. 
+If the program’s input–output behavior matches corresponding human behavior, that is evidence that some of the program’s mechanisms could also be operating in humans.
+
+### 3. Thinking rationally: The “laws of thought” approach
+The Greek philosopher Aristotle was one of the first to attempt to codify “right thinking” that is, irrefutable reasoning processes. 
+His Syllogism provided patterns for argument structures that always yielded correct conclusions when given correct premises.
+
+The canonical example starts with Socrates is a man and all men are mortal and concludes that Socrates is mortal. (This example is probably due to Sextus Empiricus rather than Aristotle.) These laws of thought were supposed to govern the operation of the mind; their study initiated the field called logic.
+
+Logic as conventionally understood requires knowledge of the world that is certain a condition that, in reality, is seldom achieved. We simply don’t know the rules of, say, politics or warfare in the same way that we know the rules of chess or arithmetic. The theoryof probability fills this gap, allowing rigorous reasoning with uncertain information. In principle, it allows the construction of a comprehensive model of rational thought, leading from raw perceptual information to an understanding of how the world works to predictions about the future. What it does not do, is generate intelligent behavior. For that, we need a theory of rational action. Rational thought, by itself, is not enough.
+
+### 4 Acting rationally: The rational agent approach
+An agent is just something that acts, Of course, all computer programs do something, but computer agents are expected to do more: operate autonomously, perceive their environment, persist over a prolonged time period, adapt to change, and create and pursue goals.
+
+A rational agent is one that acts so as to achieve the best outcome or, when there is uncertainty, the best expected outcome.
+
+In the “laws of thought” approach to AI, the emphasis was on correct inferences. Making correct inferences is sometimes part of being a rational agent, because one way to act rationally is to deduce that a given action is best and then to act on that conclusion. 
+On the other hand, there are ways of acting rationally that cannot be said to involve inference. For example, recoiling from a hot stove is a reflex action that is usually more successful than a slower action taken after careful deliberation.
+
+The rational-agent approach to AI has two advantages over the other approaches. 
+First, it is more general than the “laws of thought” approach because correct inference is just one of several possible mechanisms for achieving rationality. 
+Second, it is more amenable to scientific development. The standard of rationality is mathematically well defined and completely general. 
+We can often work back from this specification to derive agent designs that provably achieve it—something that is largely impossible if the goal is to imitate human behavior or thought processes.
+
+AI has focused on the study and construction of agents that do the right thing. What counts as the right thing is defined by the objective that we provide to the agent.
+This general paradigm is so pervasive that we might call it the standard model. It prevails not only in AI, but also in control theory, where a controller minimizes a cost function; in operations research, where a policy maximizes a sum of rewards; in statistics, where a decision rule minimizes a loss function; and in economics, where a decision maker maximizes utility or some measure of social welfare.
+
+# Intro to AI: Problem solving agents
+
+## Agents and environments
+- Agents include humans, robots, softbots, thermostats
+- An agent can be **anything that can be** viewed as **perceiving its environment** through sensors **and acting upon that environment** through actuators
+- The agent function maps from percept histories to actions:
+$$
+f: P* -> A
+$$
+*The agent program runs on the physical architecture to produce f*
+
+
