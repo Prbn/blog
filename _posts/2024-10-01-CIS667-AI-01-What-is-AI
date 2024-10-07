@@ -1,0 +1,34 @@
+# Intro to AI: What Is AI?
+
+## What Is AI?
+
+Over time, researchers have approached AI from various perspectives. Some define intelligence based on how closely it mimics human behavior, while others focus on an abstract, formal concept of intelligence known as rationality—essentially, the ability to consistently do the "right thing." 
+
+Even the understanding of rationality differs: for some, intelligence is about internal cognitive processes and reasoning, while others emphasize observable intelligent behavior.
+
+It's important to clarify that when we talk about rationality, we aren't implying that humans are irrational in the sense of lacking mental clarity. Rather, we're acknowledging that human decisions are not always mathematically flawless.
+
+This blog provides an introduction to the different approaches to defining and understanding Artificial Intelligence (AI) and rationality. I try to explains how AI research has historically been divided into four main categories based on two dimensions: 
+- **human vs. rational** 
+- **thought vs. behavior**. 
+
+### The Four Approaches to AI:
+
+1. **Acting humanly (Turing Test approach):**
+   - Alan Turing's test is designed to determine whether a machine can exhibit behavior indistinguishable from a human. It requires natural language processing, knowledge representation, automated reasoning, and machine learning. A more advanced form, the total Turing test, requires computer vision, speech recognition, and robotics.
+
+2. **Thinking humanly (Cognitive modeling approach):**
+   - This approach seeks to understand how humans think and replicate that process in AI systems. It relies on methods like introspection, psychological experiments, and brain imaging. If a program can emulate human thought processes, this suggests it might operate similarly to humans.
+
+3. **Thinking rationally (Laws of thought approach):**
+   - Rooted in the work of philosophers like Aristotle, this approach focuses on logic and reason. Rational thought involves reasoning correctly based on known facts, but it often requires the incorporation of uncertainty, such as through probability theory. However, this method doesn’t always translate into intelligent behavior.
+
+4. **Acting rationally (Rational agent approach):**
+   - In this approach, an AI system is expected to operate autonomously, adapt to changes, and make decisions to achieve the best possible outcome, even under uncertainty. This approach is broader and more scientifically rigorous than the laws of thought approach. It is closely related to fields like control theory, operations research, and economics.
+
+### Key Points:
+- AI can either seek to emulate human intelligence or aim for an abstract, rational form of intelligence.
+- The Turing Test focuses on imitating human behavior, while the rational agent approach is about achieving the best outcome, regardless of human-like behavior.
+- The rational agent model is pervasive across various disciplines like control theory, economics, and statistics, where decision-making aims to optimize outcomes.
+
+In summary, AI has developed across different methodologies depending on whether the goal is to replicate human behavior or achieve optimal decision-making through rational actions.
