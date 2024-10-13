@@ -1,81 +1,268 @@
 # Intro to AI: Problem solving agents
+# Intelligent Agent:
 
-## What Is AI?
-Historically, researchers have pursued several different versions of AI. 
-Some have defined intelligence in terms of fidelity to human performance, while others prefer an abstract, formal definition of intelligence called rationality—loosely speaking, doing the “right thing.” 
-The subject matter (Rationality) itself also varies: some consider intelligence to be a property of internal thought processes and reasoning, while others focus on intelligent behavior, an external characterization.
+## Agent and Enviornment
+An agent can be **anything that can be** viewed as **perceiving its environment** through sensors **and acting upon that environment** through actuators
 
-- We are not suggesting that humans are “irrational” in the dictionary sense of “deprived of normal mental
-clarity.” We are merely conceding that human decisions are not always mathematically perfect.
+Agents include humans, robots, softbots, thermostats
 
-
-From these two dimensions:
-— human vs. rational
-- thought vs. behavior
-there are four possible combinations, and there have been adherents and research programs for all four
-
-The methods used are necessarily different: the pursuit of human-like intelligence must be in part an empirical science related to psychology, involving observations and hypotheses about actual human behavior and thought processes; a rationalist approach, on the other hand, involves a combination of mathematics and engineering, and connects to statistics, control theory, and economics.
-
-The various groups have both disparaged and helped each other. Lets look at the four approaches in more detail:
-
-### 1. Acting humanly: The Turing test approach
-
-The Turing test, proposed by Alan Turing (1950), was designed as a thought experiment that would sidestep the philosophical vagueness of the question “Can a machine think?” A computer passes the test if a human interrogator, after posing some written questions, cannot tell whether the written responses come from a person or from a computer
-Programming a computer to pass a rigorously applied test provides plenty to work on. The computer would need the following capabilities:
-- natural language processing to communicate successfully in a human language
-- knowledge representation to store what it knows or hears
-- automated reasoning to answer questions and to draw new conclusions
-- machine learning to adapt to new circumstances and to detect and extrapolate patterns
-
-Turing viewed the physical simulation of a person as unnecessary to demonstrate intelligence. However, other researchers have proposed a total Turing test, which requires interaction with objects and people in the real world. To pass the total Turing test, a robot will need
-- computer vision and speech recognition to perceive the world
-- robotics to manipulate objects and move about
-
-These six disciplines compose most of AI.
-
-### 2. Thinking humanly: The cognitive modeling approach
-To say that a program thinks like a human, we must know how humans think. We can learn
-about human thought in three ways:
-- Introspection—trying to catch our own thoughts as they go by
-- psychological experiments—observing a person in action
-- brain imaging—observing the brain in action
-
-Once we have a sufficiently precise theory of the mind, it becomes possible to express the theory as a computer program. 
-If the program’s input–output behavior matches corresponding human behavior, that is evidence that some of the program’s mechanisms could also be operating in humans.
-
-### 3. Thinking rationally: The “laws of thought” approach
-The Greek philosopher Aristotle was one of the first to attempt to codify “right thinking” that is, irrefutable reasoning processes. 
-His Syllogism provided patterns for argument structures that always yielded correct conclusions when given correct premises.
-
-The canonical example starts with Socrates is a man and all men are mortal and concludes that Socrates is mortal. (This example is probably due to Sextus Empiricus rather than Aristotle.) These laws of thought were supposed to govern the operation of the mind; their study initiated the field called logic.
-
-Logic as conventionally understood requires knowledge of the world that is certain a condition that, in reality, is seldom achieved. We simply don’t know the rules of, say, politics or warfare in the same way that we know the rules of chess or arithmetic. The theoryof probability fills this gap, allowing rigorous reasoning with uncertain information. In principle, it allows the construction of a comprehensive model of rational thought, leading from raw perceptual information to an understanding of how the world works to predictions about the future. What it does not do, is generate intelligent behavior. For that, we need a theory of rational action. Rational thought, by itself, is not enough.
-
-### 4 Acting rationally: The rational agent approach
-An agent is just something that acts, Of course, all computer programs do something, but computer agents are expected to do more: operate autonomously, perceive their environment, persist over a prolonged time period, adapt to change, and create and pursue goals.
-
-A rational agent is one that acts so as to achieve the best outcome or, when there is uncertainty, the best expected outcome.
-
-In the “laws of thought” approach to AI, the emphasis was on correct inferences. Making correct inferences is sometimes part of being a rational agent, because one way to act rationally is to deduce that a given action is best and then to act on that conclusion. 
-On the other hand, there are ways of acting rationally that cannot be said to involve inference. For example, recoiling from a hot stove is a reflex action that is usually more successful than a slower action taken after careful deliberation.
-
-The rational-agent approach to AI has two advantages over the other approaches. 
-First, it is more general than the “laws of thought” approach because correct inference is just one of several possible mechanisms for achieving rationality. 
-Second, it is more amenable to scientific development. The standard of rationality is mathematically well defined and completely general. 
-We can often work back from this specification to derive agent designs that provably achieve it—something that is largely impossible if the goal is to imitate human behavior or thought processes.
-
-AI has focused on the study and construction of agents that do the right thing. What counts as the right thing is defined by the objective that we provide to the agent.
-This general paradigm is so pervasive that we might call it the standard model. It prevails not only in AI, but also in control theory, where a controller minimizes a cost function; in operations research, where a policy maximizes a sum of rewards; in statistics, where a decision rule minimizes a loss function; and in economics, where a decision maker maximizes utility or some measure of social welfare.
-
-# Intro to AI: Problem solving agents
-
-## Agents and environments
-- Agents include humans, robots, softbots, thermostats
-- An agent can be **anything that can be** viewed as **perceiving its environment** through sensors **and acting upon that environment** through actuators
-- The agent function maps from percept histories to actions:
+The agent function maps from percept histories to actions:
 $$
 f: P* -> A
 $$
-*The agent program runs on the physical architecture to produce f*
+
+*The agent program runs on the physical architecture to produce $f$*
+
+## The Concept of Rationality
+
+A **rational agent** is one that **does the right thing**.  *But what does it mean to do the right thing?*
+
+Moral philosophy has developed several different notions of the “right thing,” but AI has generally stuck to one notion called consequentialism.
+In consequentialism, we evaluate an agent’s behavior by its consequences. When an agent is plunked down in an environment, it generates a sequence of actions according to the percepts it receives. This sequence of actions causes the environment to go through a sequence of states. If the sequence is desirable, then the agent has performed well.
+
+This notion of desirability is captured by a performance measure that evaluates any given sequence of environment states.
 
 
+###  Rationality
+Rational at any given time depends on four things:
+
+• The performance measure that defines the criterion of success.
+• The agent’s prior knowledge of the environment.
+• The actions that the agent can perform.
+• The agent’s percept sequence to date.
+
+**Definition of a rational agent:**
+
+For each possible percept sequence, a rational agent should select an action that is expected to maximize its performance measure, given the evidence provided by the percept sequence and whatever built-in knowledge the agent has.
+
+A rational agent chooses whichever action maximizes the expected value of the performance measure given the percept sequence to date
+
+### Omniscience, learning, and autonomy
+
+**Omniscience:**
+
+An omniscient agent knows the actual outcome of its actions and can act accordingly.
+But omniscience is impossible in reality. Rationality and omniscience are different.  Rationality maximizes expected performance, while perfection maximizes actual performance. definition of rationality does not require omniscience, then, because the rational
+choice depends only on the percept sequence to date.
+
+**Learning:**
+
+A rational agent should gather information before taking an action. Doing actions in order to modify future percepts—sometimes called information gathering—is an important part of rationality. A rational agent requires not only to gather information but also to learn as much as possible from what it perceives. The agent’s initial configuration could reflect some prior knowledge of the environment, but as the agent gains experience this may be modified and augmented.
+
+There are extreme cases in which the environment is completely known a priori and completely predictable. In such cases, the agent need not perceive or learn; it simply acts correctly.
+
+**Autonomy:**
+
+To the extent that an agent relies on the prior knowledge of its designer rather than on its own percepts and learning processes, we say that the agent lacks autonomy. 
+A rational agent should be autonomous—it should learn what it can to compensate for partial or incorrect prior knowledge.
+
+## The Nature of Environments
+
+task environments, which are essentially the “problems” to which rational agents are the “solutions.” We begin by showing how to specify a task environment, then show that task environments come in a variety of flavors. The nature of the task environment directly affects the appropriate design for the agent program
+
+### Specifying the task environment
+
+to specify the performance measure, the environment, and the agent’s actuators and sensors. We group all these under the heading of the task environment.
+For the acronymically minded, we call PEAS this the (Performance, Environment, Actuators, Sensors) description. In designing an agent, the first step must always be to specify the task environment as fully as possible.
+
+**Performance Measure:**
+performance measure to which we would like our automated driver to aspire? Desirable qualities include getting to the correct destination; minimizing fuel consumption and wear and tear; minimizing the trip time or cost; minimizing violations of traffic laws and disturbances to other drivers; maximizing safety and passenger comfort; maximizing profits. Obviously, some of these goals conflict, so tradeoffs will be required
+
+**Environment:**
+
+**Actuators:**
+
+**Sensors:**
+
+*Examples:*
+
+1. The task of designing an automated taxi:
+- **Performance measure:** {safety, destination, profits, legality, comfort, ..}
+- **Environment:** {US streets/freeways, traffic, pedestrians, weather, ..}
+- **Actuators:** {steering, accelerator, brake, horn, speaker/display, ..}
+- **Sensors:** {video, accelerometers, gauges, engine sensors, keyboard, GPS}
+
+2. The task of Internet shopping agent:
+- **Performance measure:** {price, quality, appropriateness, efficiency, ..}
+- **Environment:** {current and future WWW sites, vendors, shippers, ..}
+- **Actuators:** {display to user, follow URL, fill in form, ..}
+- **Sensors:** {HTML pages (text, graphics, scripts)}
+
+
+## Properties of task environments:
+
+The range of task environments that might arise in AI is obviously vast. We can, however, identify a fairly small number of dimensions along which task environments can be categorized. These dimensions determine, to a large extent, the appropriate agent design and the applicability of each of the principal families of techniques for agent implementation.
+
+1. Fully observable vs. partially observable
+2. Single-agent vs. multiagent
+3. Deterministic vs. nondeterministic.
+4. Episodic vs. sequential
+5. Static vs. dynamic
+6. Discrete vs. continuous
+7. Known vs. unknown
+
+Fully observable vs. partially observable: If an agent’s sensors give it access to the complete state of the environment at each point in time, then we say that the task environment is fully observable. A task environment is effectively fully observable if the sensors detect all aspects that are relevant to the choice of action; relevance, in turn, depends on the performance measure. Fully observable environments are convenient because the agent need not maintain any internal state to keep track of the world. An environment might be partially observable because of noisy and inaccurate sensors or because parts of the state are simply missing from the sensor data—for example, a vacuum agent with only a local dirt sensor cannot tell whether there is dirt in other squares, and an automated taxi cannot see what other drivers are thinking. If the agent has no sensors at all then the environment isUnobservable.
+
+Single-agent vs. multiagent: The distinction between single-agent and multiagent environments may seem simple enough. For example, an agent solving a crossword puzzle by itself is clearly in a single-agent environment, whereas an agent playing chess is in a twoagent environment. 
+However, there are some subtle issues. First, we have described how an entity may be viewed as an agent, but we have not explained which entities must be viewed as agents. Does an agent A (the taxi driver for example) have to treat an object B (anothervehicle) as an agent, or can it be treated merely as an object behaving according to the laws of physics, analogous to waves at the beach or leaves blowing in the wind? The key distinction is whether B’s behavior is best described as maximizing a performance measure whose value depends on agent A’s behavior
+
+The agent-design problems in multiagent environments are often quite different from those in single-agent environments; for example, communication often emerges as a rational behavior in multiagent environments; in some competitive environments, randomized behavior is rational because it avoids the pitfalls of predictability.
+
+Deterministic vs. nondeterministic. If the next state of the environment is completely determined by the current state and the action executed by the agent(s), then we say the environment is deterministic; otherwise, it is nondeterministic. In principle, an agent need not worry about uncertainty in a fully observable, deterministic environment. If the environment is partially observable, however, then it could appear to be nondeterministic.
+
+the word stochastic is used by some as a synonym for “nondeterministic,” but we make a distinction between the two terms; we say that a model of the environment is stochastic if it explicitly deals with probabilities (e.g., “there’s a 25% chance of rain tomorrow”) and “nondeterministic” if the possibilities are listed without being quantified (e.g., “there’s a chance of rain tomorrow”).
+
+Episodic vs. sequential: In an episodic task environment, the agent’s experience is divided into atomic episodes. In each episode the agent receives a percept and then performs a single action. Crucially, the next episode does not depend on the actions taken in previous episodes. Many classification tasks are episodic. For example, an agent that has to spot defective parts on an assembly line bases each decision on the current part, regardless of previous decisions; moreover, the current decision doesn’t affect whether the next part isdefective. 
+In sequential environments, on the other hand, the current decision could affect all future decisions.4 Chess and taxi driving are sequential: in both cases, short-term actions can have long-term consequences. 
+Episodic environments are much simpler than sequential environments because the agent does not need to think ahead.
+
+Static vs. dynamic: If the environment can change while an agent is deliberating, then we say the environment is dynamic for that agent; otherwise, it is static. Static environments are easy to deal with because the agent need not keep looking at the world while it is deciding on an action, nor need it worry about the passage of time. Dynamic environments, on the other hand, are continuously asking the agent what it wants to do; if it hasn’t decided yet, that counts as deciding to do nothing. If the environment itself does not change with the passage of time but the agent’s performance score does, then we say the environment is semidynamic.
+
+Discrete vs. continuous: The discrete/continuous distinction applies to the state of the environment, to the way time is handled, and to the percepts and actions of the agent. For example, the chess environment has a finite number of distinct states (excluding the clock). Chess also has a discrete set of percepts and actions. Taxi driving is a continuous-state and continuous-time problem: the speed and location of the taxi and of the other vehicles sweep through a range of continuous values and do so smoothly over time. Taxi-driving actions are also continuous (steering angles, etc.). Input from digital cameras is discrete, strictly speaking, but is typically treated as representing continuously varying intensities and locations.
+
+Known vs. unknown: Strictly speaking, this distinction refers not to the environment itself but to the agent’s (or designer’s) state of knowledge about the “laws of physics” of the environment.  In a known environment, the outcomes (or outcome probabilities if the environment is nondeterministic) for all actions are given. Obviously, if the environment is unknown, the agent will have to learn how it works in order to make good decisions.
+
+The distinction between known and unknown environments is not the same as the one between fully and partially observable environments. It is quite possible for a known environment to be partially observable—for example, in solitaire card games, I know the rules but am still unable to see the cards that have not yet been turned over. Conversely, an unknown environment can be fully observable—in a new video game, the screen may show the entire game state but I still don’t know what the buttons do until I try them.
+
+The hardest case is partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, and unknown.
+
+
+
+## Agent Types
+The agent programs take the current percept as input from the sensors and return an action to the actuators. The difference between the agent program, which takes the current percept as input, and the agent function, which may depend on the entire percept history. The agent program has no choice but to take just the current percept as input because nothing more is available from the environment; if the agent’s actions need to depend on the entire percept sequence, the agent will have to remember the percepts.
+
+We describe the agent programs in the simple pseudocode language:
+```
+function TABLE-DRIVEN-AGENT(percept) returns an action
+persistent: percepts, a sequence, initially empty
+table, a table of actions, indexed by percept sequences, initially fully specified
+append percept to the end of percepts
+action←LOOKUP(percepts, table)
+return action
+```
+The TABLE-DRIVEN-AGENT program is invoked for each new percept and returns an action each time. It retains the complete percept sequence in memory. It is a trivial agent program that keeps track of the percept sequence and then uses it to index into a table of actions to decide what to do.
+To build a rational agent in this way, we as designers must construct a table that contains the appropriate action for every possible percept sequence.
+It is instructive to consider why the table-driven approach to agent construction is doomed
+to failure. Let P be the set of possible percepts and let T be the lifetime of the agent (the total
+number of percepts it will receive). The lookup table will contain ∑
+T
+t =1
+|P|t
+entries. Consider
+the automated taxi: the visual input from a single camera (eight cameras is typical) comes
+in at the rate of roughly 70 megabytes per second (30 frames per second, 1080×720 pixels
+with 24 bits of color information). This gives a lookup table with over 10600,000,000,000 entries
+for an hour’s driving. Even the lookup table for chess—a tiny, well-behaved fragment of the
+real world—has (it turns out) at least 10150 entries. In comparison, the number of atoms in
+the observable universe is less than 1080. The daunting size of these tables means that (a) no
+physical agent in this universe will have the space to store the table; (b) the designer would
+not have time to create the table; and (c) no agent could ever learn all the right table entries
+from its experience.
+Despite all this, TABLE-DRIVEN-AGENT does do what we want, assuming the table is filled in correctly: it implements the desired agent function.
+
+*The key challenge for AI is to find out how to write programs that, to the extent possible, produce rational behavior from a smallish program rather than from a vast table.*
+
+The four basic kinds of agent programs that embody the principles underlying almost all intelligent systems:
+- Simple reflex agents
+- Model-based reflex agents
+- Goal-based agents
+- Utility-based agents
+
+Each kind of agent program combines particular components in particular ways to generate actions. 
+
+### Simple reflex agents
+The simplest kind of agent is the simple reflex agent. These agents select actions on the basis of the current percept, ignoring the rest of the percept history.
+Simple reflex behaviors occur even in more complex environments.
+
+```
+function SIMPLE-REFLEX-AGENT(percept) returns an action
+persistent: rules, a set of condition–action rules
+state←INTERPRET-INPUT(percept)
+rule←RULE-MATCH(state,rules)
+action←rule.ACTION
+return action
+```
+A simple reflex agent. It acts according to a rule whose condition matches the current state, as defined by the percept.
+
+
+### Model-based reflex agents
+The most effective way to handle partial observability is for the agent to keep track of the part of the world it can’t see now.
+The agent should maintain some sort of internal state that depends on the percept history and thereby reflects at least some of the unobserved Internal state aspects of the current state.
+
+Updating this internal state information as time goes by requires two kinds of knowledge to be encoded in the agent program in some form. First, we need some information about how the world changes over time, which can be divided roughly into two parts: the effects of the agent’s actions and how the world evolves independently of the agent. For example, when theagent turns the steering wheel clockwise, the car turns to the right, and when it’s raining the car’s cameras can get wet. This knowledge about “how the world works”—whether implemented in simple Boolean circuits or in complete scientific theories—is called a transition model of the world.
+
+Second, we need some information about how the state of the world is reflected in the agent’s percepts. For example, when the car in front initiates braking, one or more illuminated red regions appear in the forward-facing camera image, and, when the camera gets wet, droplet-shaped objects appear in the image partially obscuring the road. This kind of knowledge is called a sensor model.
+
+Together, the transition model and sensor model allow an agent to keep track of the state of the world—to the extent possible given the limitations of the agent’s sensors. An agent that uses such models is called a model-based agent.
+
+```
+function MODEL-BASED-REFLEX-AGENT(percept) returns an action
+persistent: state, the agent’s current conception of the world state
+transition model, a description of how the next state depends on
+the current state and action
+sensor model, a description of how the current world state is reflected
+in the agent’s percepts
+rules, a set of condition–action rules
+action, the most recent action, initially none
+state←UPDATE-STATE(state, action, percept, transition model,sensor model)
+rule←RULE-MATCH(state,rules)
+action←rule.ACTION
+return action
+```
+A model-based reflex agent. It keeps track of the current state of the world, using an internal model. It then chooses an action in the same way as the reflex agent.
+
+
+### Goal-based agents
+
+Knowing something about the current state of the environment is not always enough to decide
+what to do. For example, at a road junction, the taxi can turn left, turn right, or go straight
+on. The correct decision depends on where the taxi is trying to get to. In other words,
+as well as a current state description, the agent needs some sort of goal information that Goal
+describes situations that are desirable—for example, being at a particular destination. The
+agent program can combine this with the model (the same information as was used in the
+model-based reflex agent) to choose actions that achieve the goal. Figure 2.13 shows the
+goal-based agent’s structure.
+Sometimes goal-based action selection is straightforward—for example, when goal satisfaction results immediately from a single action. Sometimes it will be more tricky—for
+example, when the agent has to consider long sequences of twists and turns in order to find a
+way to achieve the goal. 
+Although the goal-based agent appears less efficient, it is more flexible because the
+knowledge that supports its decisions is represented explicitly and can be modified. For
+example, a goal-based agent’s behavior can easily be changed to go to a different destination,
+simply by specifying that destination as the goal. The reflex agent’s rules for when to turn
+and when to go straight will work only for a single destination; they must all be replaced to
+go somewhere new.
+
+### Utility-based agents
+
+Goals alone are not enough to generate high-quality behavior in most environments. For
+example, many action sequences will get the taxi to its destination (thereby achieving the
+goal), but some are quicker, safer, more reliable, or cheaper than others. Goals just provide a
+crude binary distinction between “happy” and “unhappy” states. A more general performance
+measure should allow a comparison of different world states according to exactly how happy
+they would make the agent. Because “happy” does not sound very scientific, economists and
+computer scientists use the term utility instead.
+
+An agent’s utility function is essentially an internalization
+of the performance measure. Provided that the internal utility function and the external performance measure are in agreement, an agent that chooses actions to maximize its utility will
+be rational according to the external performance measure.
+
+Furthermore, in two kinds of cases, goals are inadequate but a
+utility-based agent can still make rational decisions. First, when there are conflicting goals,
+only some of which can be achieved (for example, speed and safety), the utility function
+specifies the appropriate tradeoff. Second, when there are several goals that the agent can
+aim for, none of which can be achieved with certainty, utility provides a way in which the
+likelihood of success can be weighed against the importance of the goals
+
+Partial observability and nondeterminism are ubiquitous in the real world, and so, therefore, is decision making under uncertainty. Technically speaking, a rational utility-based
+agent chooses the action that maximizes the expected utility of the action outcomes—that Expected utility
+is, the utility the agent expects to derive, on average, given the probabilities and utilities of
+each outcome. (Appendix A defines expectation more precisely.) In Chapter 16, we show
+that any rational agent must behave as if it possesses a utility function whose expected value
+it tries to maximize. An agent that possesses an explicit utility function can make rational decisions with a general-purpose algorithm that does not depend on the specific utility function
+being maximized. In this way, the “global” definition of rationality—designating as rational
+those agent functions that have the highest performance—is turned into a “local” constraint
+on rational-agent designs that can be expressed in a simple program.
+
+A general learning agent. The “performance element” box represents what we
+have previously considered to be the whole agent program. Now, the “learning element” box
+gets to modify that program to improve its performance.
