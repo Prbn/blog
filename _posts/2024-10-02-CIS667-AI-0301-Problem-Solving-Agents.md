@@ -71,11 +71,11 @@ function Simple-Problem-Solving-Agent(percept) returns an action
 ```
 **Note: This pseudocode represents a simple problem-solving agent that reacts based on its perception of the environment, formulates goals and problems, and searches for solutions.**
 
-#### **Workflow:**
-**Update State:** The agent updates its internal state based on percepts.
-**Plan:** If no plan exists, the agent formulates a goal and problem, then searches for a sequence of actions to achieve the goal.
-**Action Selection:** The agent selects an action from the action sequence based on the current state.
-**Execution:** The agent executes the action and removes it from the action sequence.
+#### **Workflow:**/
+**Update State:** The agent updates its internal state based on percepts./
+**Plan:** If no plan exists, the agent formulates a goal and problem, then searches for a sequence of actions to achieve the goal./
+**Action Selection:** The agent selects an action from the action sequence based on the current state./
+**Execution:** The agent executes the action and removes it from the action sequence./
 **Repeat:** This process continues until the goal is achieved or no more actions are available.
 
 ## **Agent's Workflow: Simple Problem-Solving Agent**
