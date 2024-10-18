@@ -151,6 +151,7 @@ To evaluate and compare search algorithms, several criteria are used to assess t
 
 1. **Completeness**:
    - The algorithm guarantees finding a solution if one exists by systematically exploring all reachable states.
+   - An algorithm is said to be **complete** if it guarantees finding a solution if one exists.
 
 2. **Cost Optimality**:
    - The algorithm finds the solution with the lowest path cost compared to others.
@@ -165,4 +166,35 @@ To evaluate and compare search algorithms, several criteria are used to assess t
    - Space complexity refers to the amount of memory the algorithm needs to store intermediate states and paths during the search process.
 
 In infinite state spaces, algorithms must avoid infinite loops and explore systematically. Time and space complexity depend on factors like solution depth, path length, and branching factor.
+
+
+
+## Graph search
+
+```
+function Graph-Search( problem, fringe) returns a solution, or failure
+  closed ← an empty set
+  fringe ← Insert (Make-Node(Initial-State [problem]),fringe)
+  loop do
+    if fringe is empty then return failure
+    node ← Remove-Front(fringe)
+    if Goal-Test(problem,State[node]) then return node
+    if State[node] is not in closed then
+      add State[node] to closed
+      fringe ← InsertAl l(Expand(node,problem),fringe)
+  end
+```
+
+## Tree search
+A strategy is defined by picking the order of node expansion
+
+```
+function Tree-Search( problem, fringe) returns a solution, or failure 
+  fringe ← Insert(Make-Node(Initial-State[problem]), fringe) 
+  loop do
+    if fringe is empty then return failure
+    node ← Remove-Front(fringe)
+    if Goal-Test[problem] applied to State(node) succeeds return node 
+    fringe ← InsertAll(Expand(node, problem), fringe)
+```
 
