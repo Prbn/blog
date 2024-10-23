@@ -318,6 +318,7 @@ while agenda is not empty do
   return false
 ```
 
+![Forward Chaining](https://github.com/user-attachments/assets/f2ab9178-c4a6-4e25-8fbd-ec8ef7352ec7)
 
 **Proof of completeness**
 FC derives every atomic sentence that is entailed by KB
@@ -346,9 +347,11 @@ Avoid repeated work: check if new subgoal
 1) has already been proved true, or
 2) has already failed
 
+![Backward Chaining](https://github.com/user-attachments/assets/45e8c929-e431-46aa-8263-c1ff68b13e90)
 
 
-### Forward vs. backward chaining
+
+### Forward vs. Backward chaining
 
 Forward Chaining is data-driven, cf. automatic, unconscious processing, 
   * example: object recognition, routine decisions
