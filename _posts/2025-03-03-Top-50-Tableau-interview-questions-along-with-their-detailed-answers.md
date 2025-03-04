@@ -1,3 +1,5 @@
+# Top 50 Tableau interview questions
+
 Here are **50 Tableau interview questions** along with their **detailed answers**, categorized by difficulty level.
 
 ---
