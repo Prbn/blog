@@ -1,7 +1,8 @@
 
 # 15 Essential LeetCode Patterns That Make Interviews Easier
 
-**success isn’t about solving the most problems—it’s about recognizing the right patterns.** Patterns help you break down unfamiliar problems efficiently, reduce time complexity, and ace interviews at top companies like **Google and Amazon**.
+*Success isn’t about solving the most problems—it’s about recognizing the right patterns.* 
+Patterns help you break down unfamiliar problems efficiently, reduce time complexity, and ace interviews at top companies like **Google and Amazon**.
 
 Here are **15 must-know patterns**, complete with explanations, examples, and recommended problems to practice.
 
@@ -42,6 +43,10 @@ Below are some of the leet code problem to practice:
 **Why it Helps**: Converts O(n²) brute-force solutions into efficient O(n) approaches.
 
 **Practice**: Two Sum II, 3Sum, Valid Palindrome
+Below are some of the leet code problem to practice:
+#### 1. [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) *(Medium)*
+#### 2. [15. 3Sum](https://leetcode.com/problems/3sum/description/) *(Medium)*
+#### 3. [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) *(Medium)*
 
 ---
 
