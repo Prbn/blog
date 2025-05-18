@@ -30,11 +30,16 @@ Next, document what the business wants to achieve. These objectives should be:
 * Actionable
 * Measurable
 
+**Best Practices:**
+
+* Use concise 2–3 word phrases
+* Prefer optimization language like "Minimize" or "Maximize"
+
 Examples include:
 
-* Reduce churn rate by 15%
-* Improve customer conversion by 10%
-* Automate invoice processing by 80%
+* Minimize churn rate
+* Maximize conversion ratio
+* Automate invoice processing
 
 Well-defined objectives provide direction and help assess progress later.
 
@@ -47,6 +52,11 @@ All projects have limitations. Understanding them early prevents roadblocks late
 * Limited data availability
 * Legal and regulatory boundaries
 * Technical limitations of legacy systems
+
+**Best Practices:**
+
+* Use simple phrasing (e.g., "Limited budget", "Time-bound delivery")
+* Clearly state technical or operational boundaries
 
 Constraints shape the feasibility of proposed solutions and help narrow the scope.
 
@@ -73,6 +83,16 @@ How will we know the project succeeded? Success criteria should connect both tec
 * Positive impact on profit margins or customer lifetime value
 
 By setting success criteria early, teams create a shared understanding of what good looks like.
+
+## F. Project Documentation and Planning
+
+To ensure long-term success, proper documentation and design planning is critical.
+
+* **Project Charter**: Summarize the problem, scope, objectives, stakeholders, and timeline
+* **Research Review**: Conduct thorough literature review using sources like Google Scholar, ResearchGate, CORE, etc. Study previous projects to understand benchmarks and best practices
+* **High Level Design (HLD)**: Define system architecture, component flow, and integration strategy
+* **Decision Analysis and Resolution (DAR)**: Evaluate multiple solution paths and justify chosen approach with structured decision-making
+* **Detailed Level Design (DLD)**: Document specific implementation details, including data pipelines, model selection, feature engineering, and deployment architecture
 
 ## Conclusion
 
