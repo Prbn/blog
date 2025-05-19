@@ -67,6 +67,42 @@ K-Means is a popular unsupervised algorithm that partitions data into `k` cluste
 
 If a user typically transacts \$1000 to \$2000 per month, and suddenly a \$100,000 transaction appears, K-Means would likely assign this point far from the cluster center, marking it as suspicious.
 
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+# Simulated transaction data
+normal_data = np.random.normal(loc=1500, scale=200, size=(100, 1))
+anomaly = np.array([[100000]])
+data = np.vstack((normal_data, anomaly))
+
+# Standardize
+scaler = StandardScaler()
+data_scaled = scaler.fit_transform(data)
+
+# Fit KMeans
+kmeans = KMeans(n_clusters=2, random_state=42)
+kmeans.fit(data_scaled)
+labels = kmeans.labels_
+centers = kmeans.cluster_centers_
+
+# Compute distances to cluster centers
+from numpy.linalg import norm
+distances = norm(data_scaled - centers[labels], axis=1)
+
+# Flag top anomaly
+anomaly_index = np.argmax(distances)
+
+# Visualize
+plt.scatter(data_scaled[:, 0], np.zeros_like(data_scaled), c=labels, cmap='viridis')
+plt.scatter(data_scaled[anomaly_index], 0, color='red', label='Anomaly')
+plt.title('K-Means Clustering: Anomaly Highlighted')
+plt.legend()
+plt.show()
+```
+
 ---
 
 ## Elbow Method: Choosing the Right `k`
